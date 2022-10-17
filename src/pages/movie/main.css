@@ -1,31 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gaegu:wght@300;700&family=Hahmlet:wght@700&display=swap");
 #root {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: FontAwesome;
-}
 
+  font-family: hahmlet;
+  color: #fff;
+}
+.container h2,
+h1,
+span {
+  cursor: pointer;
+  color: #fff;
+}
+.container h1 {
+  color: #fff;
+  cursor: pointer;
+}
+.h2_text {
+  margin-top: 10px;
+}
 .container {
   border-radius: 5px;
   height: 100%;
-  border: 1px solid #545e6f;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.85) 15%,
+    rgba(0, 0, 0, 0.2) 40%,
+    #000 90%
+  );
   justify-content: space-around;
   background-clip: content-box;
   align-items: center;
-  padding: 50px;
-  width: 1200px;
-  height: 900px;
-  box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
+
+  overflow: none;
+}
+.button {
+  margin-top: 8px;
+  margin-right: 10px;
 }
 .container_input {
   display: flex;
   justify-content: center;
+  color: black;
+  margin-top: 10px;
+}
+
+.inner_input {
+  display: flex;
+  justify-content: space-around;
 }
 .inner_input input {
   border-radius: 1px;
-  margin-right: 5px;
-  width: 500px;
+
+  width: 200px;
   border-top: 1px;
   border-left: 1px;
   border-right: 1px;
@@ -35,24 +61,26 @@ input:focus {
 }
 .mainImage {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-content: center;
   margin-top: 50px;
+  margin-left: 100px;
 }
 .ri-home-line {
   font-size: 2em;
 }
-.InnerText {
-  width: 500px;
+.container_inner {
+  width: 1000px;
   margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: baseline;
 }
+
 .image {
   width: 430px;
-  height: 600px;
+  height: 700px;
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
   border-radius: 8px;
   margin: 0 10px;
@@ -61,29 +89,41 @@ input:focus {
 .image:hover {
   box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
   transform: translate(0, -5px);
+  cursor: pointer;
 }
 .datamap {
   display: flex;
-  justify-content: baseline;
-  width: 430px;
-
-  margin: 0 10px;
-
+  justify-content: flex-start;
+  width: 1000px;
+  height: 100%;
+  object-fit: cover;
   flex-wrap: wrap;
   margin-top: 10px;
+  position: fixed;
+  margin-top: 300px;
 }
 .hello {
-  margin-left: 30px;
-  margin-top: 10px;
-  width: 100px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   box-shadow: 10px 10px 10px -5px rgba(25, 42, 70, 0.2);
   border-radius: 8px;
+  object-fit: cover;
 }
 .hello:hover {
   box-shadow: 10px 10px 10px 0px rgba(25, 42, 70, 0.2);
   transform: translate(0, -5px);
   transition: 0.4s;
+  cursor: pointer;
+}
+.datamap_image {
+  width: 150px;
+  height: 250px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.inner_text {
+  width: 1000px;
+  height: 300px;
 }
 /*
 
@@ -100,10 +140,8 @@ input:focus {
   font-size: 20px;
   font-weight: 800;
 }
-.datamap {
-  display: flex;
-}
+.datamap {datamap_image
 .hello {
   height: 100px;
   width: 100px;
-} */
+} */ ;
