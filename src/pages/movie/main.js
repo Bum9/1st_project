@@ -122,22 +122,31 @@ const Main = () => {
   return (
     <div className="container">
       <div className="inner_input">
-        <h2 className="h2_text">Home</h2>
-
-        <h2 className="h2_text">영화 일간 순위(전날 기준 )</h2>
+        <Link to={"/"}>
+          <h2 className="h2_text">Home</h2>
+        </Link>
+        <Link to={"/test"}>
+          <h2 className="h2_text">영화 일간 순위(전날 기준 )</h2>
+        </Link>
         <h2 className="h2_text">영화 주간 순위</h2>
-        <div className="container_input">
-          <Tooltip title="search">
-            <Button
-              className="button"
-              type="primary"
-              shape="circle"
-              icon={<SearchOutlined />}
-              onClick={mainPosterHandler}
-            />
-          </Tooltip>
-          <input onBlur={handleBlur} />
-        </div>
+        <h2 className="h2_text">Login/Logout</h2>
+      </div>
+      <div className="container_input">
+        <Tooltip title="search">
+          <Button
+            className="button"
+            type="primary"
+            shape="circle"
+            icon={<SearchOutlined />}
+            onClick={mainPosterHandler}
+          />
+        </Tooltip>
+        <input
+          onBlur={handleBlur}
+          className="Input"
+          placeholder="영화를 입력해주세요!"
+          autoFocus
+        />
       </div>
       <>{oneDataMap}</>
     </div>

@@ -40,8 +40,16 @@ span {
 .container_input {
   display: flex;
   justify-content: center;
-  color: black;
+
   margin-top: 10px;
+}
+.Input {
+  border-color: white;
+  background-color: transparent;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+  animation: inherit;
 }
 
 .inner_input {
@@ -52,9 +60,6 @@ span {
   border-radius: 1px;
 
   width: 200px;
-  border-top: 1px;
-  border-left: 1px;
-  border-right: 1px;
 }
 input:focus {
   outline: none;
@@ -125,23 +130,3 @@ input:focus {
   width: 1000px;
   height: 300px;
 }
-/*
-
-
-
-.image1 {
-  width: 400px;
-  height: 400px;
-}
-
-.InnerText {
-}
-.InnerText p {
-  font-size: 20px;
-  font-weight: 800;
-}
-.datamap {datamap_image
-.hello {
-  height: 100px;
-  width: 100px;
-} */ ;

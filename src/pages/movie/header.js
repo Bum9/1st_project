@@ -1,15 +1,25 @@
-import React from "react";
-
-const Header = () => {
+import React, { Children } from "react";
+import { Link } from "react-router-dom";
+const Header = (props) => {
   return (
     <>
       <div className="container">
         <div className="inner_input">
-          <h2 className="h2_text">Home</h2>
-          <h2 className="h2_text">개봉예정작</h2>
-          <h2 className="h2_text">인기상영작</h2>
-          <h2 className="h2_text">Login/Logout</h2>
+          <Link to={"/"}>
+            <h2 className="h2_text">Home</h2>
+          </Link>
+          <Link to={"/test"}>
+            <h2 className="h2_text">영화 일간 순위(전날 기준 )</h2>
+          </Link>
+          <Link to={"/"}>
+            <h2 className="h2_text">영화 주간 순위</h2>
+          </Link>
+          <Link to={"/"}>
+            <h2 className="h2_text">Login/Logout</h2>
+          </Link>
         </div>
+
+        {props.children}
       </div>
     </>
   );
