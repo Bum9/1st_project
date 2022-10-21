@@ -1,11 +1,12 @@
 import React from "react";
 import Header from "./header";
 import Main from "./main";
+import Movie1 from "./movie1";
 const Test = () => {
   return (
     <>
       <Header>
-        <h1>asdsd</h1>
+        <Movie1 />
       </Header>
     </>
   );

@@ -88,7 +88,7 @@ const Main = () => {
           <a href={data.link} target="_blank">
             <img
               className="image"
-              src={data.image.replace("mit110", "mit500")} //
+              src={data.image.replace("mit110", "mit500")} //uy
               alt="이미지가 없습니다!"
             />
           </a>
@@ -97,10 +97,7 @@ const Main = () => {
         <div className="container_inner">
           <div className="inner_text">
             <h1>
-              제목 : &nbsp;
-              <span
-                dangerouslySetInnerHTML={{ __html: FirstData.title }}
-              ></span>
+              <span dangerouslySetInnerHTML={{ __html: data.title }}></span>
             </h1>
 
             <h2>출연 배우 : {data.actor.replaceAll("|", "/")}</h2>
