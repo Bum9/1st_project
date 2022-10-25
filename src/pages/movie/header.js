@@ -1,5 +1,6 @@
 import React, { Children } from "react";
 import { Link } from "react-router-dom";
+import Movie1 from "./movie1";
 const Header = (props) => {
   return (
     <>
@@ -14,9 +15,7 @@ const Header = (props) => {
           <Link to={"/"}>
             <h2 className="h2_text">영화 주간 순위</h2>
           </Link>
-          <Link to={"/"}>
-            <h2 className="h2_text">Login/Logout</h2>
-          </Link>
+          <Link to={"/"}></Link>
         </div>
 
         {props.children}

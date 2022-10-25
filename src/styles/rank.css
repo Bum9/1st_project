@@ -1,0 +1,47 @@
+.rank-container {
+  width: 380px;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: none;
+}
+
+.rank-container:hover {
+  width: 380px;
+  height: 450px;
+  background-color: rgb(red, green, blue);
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: all 0.5s ease-in-out;
+}
+.box1 {
+  position: relative;
+  border: 1px solid #f2b441;
+  background: #f2d541;
+  border-radius: 10px;
+  animation-name: ball;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.box1:hover {
+  transition: none;
+}
+@keyframes ball {
+  0% {
+    /* keyframe */
+    top: -10px;
+  }
+  50% {
+    /* keyframe */
+    top: -31px;
+  }
+  100% {
+    /* keyframe */
+    top: -50px;
+  }
+}
+
+.spam {
+  margin-left: 10px;
+
+  color: red;
+}

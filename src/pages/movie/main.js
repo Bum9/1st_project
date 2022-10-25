@@ -6,6 +6,7 @@ import { Button, Tooltip } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import "remixicon/fonts/remixicon.css";
 import { Link, Routes, Route } from "react-router-dom";
+import Movie1 from "./movie1";
 
 const Main = () => {
   const movie = { title: "", pubDate: "", image: "", userRating: "" };
@@ -126,7 +127,8 @@ const Main = () => {
           <h2 className="h2_text">영화 일간 순위(전날 기준 )</h2>
         </Link>
         <h2 className="h2_text">영화 주간 순위</h2>
-        <h2 className="h2_text">Login/Logout</h2>
+
+        <Movie1></Movie1>
       </div>
       <div className="container_input">
         <Tooltip title="search">
